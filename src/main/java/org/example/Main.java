@@ -27,7 +27,7 @@ public class Main {
             file = new MemoryFileSearch("src/words.dat");
 
             int colCount = file.columnCount(sep);
-            if(!(column > colCount || 1>column))
+            if(colCount >= column && column > 0)
             while(true) {
 
                 System.out.println("Enter a substring:");
