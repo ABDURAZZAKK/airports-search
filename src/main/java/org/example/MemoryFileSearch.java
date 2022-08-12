@@ -29,6 +29,6 @@ public class MemoryFileSearch{
         return result;
     }
     public Integer columnCount(String separator){
-        return this.lines.stream().limit(1).max(String::compareTo).get().split(separator).length;
+        return this.lines.get(0).split(separator).length;
     }
 }
